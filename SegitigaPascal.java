@@ -1,8 +1,5 @@
 public class SegitigaPascal {
     public static void cetakEkspansiBinomial(int n, int x, int y) {
-        int hasilRumus = (int) Math.pow(x + y, n);
-        System.out.println("(" + x + " + " + y + ")^" + n + " = " + hasilRumus);
-
         if (n > 1) {
             System.out.println("Prediksi suku sebelumnya:");
             int[] koefisien = new int[n + 1];
@@ -26,7 +23,7 @@ public class SegitigaPascal {
             System.out.println();
         }
 
-        System.out.println("Hasil ekspansi binomial:");
+        System.out.println("Hasil binomial:");
         int[] koefisien = new int[n + 1];
         koefisien[0] = 1;
 
@@ -54,4 +51,3 @@ public class SegitigaPascal {
         cetakEkspansiBinomial(n, x, y);
     }
 }
-
